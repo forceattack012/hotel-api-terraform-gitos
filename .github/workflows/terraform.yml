@@ -20,10 +20,10 @@ jobs:
 
     steps:
     - name: Checkout
-      users: actions/checkout@v3
+      uses: actions/checkout@v3
 
     - name: Setup Terraform
-      users: hashicorp/setup-terraform@v2
+      uses: hashicorp/setup-terraform@v2
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
