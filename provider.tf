@@ -7,10 +7,10 @@ terraform {
     }
   }
   cloud {
-    organization = "devOps-kim"
+    organization = "kim-devOps"
 
     workspaces {
-      name = "devops-infra-kim"
+      name = "hotel-api-terraform"
     }
   }
 }
